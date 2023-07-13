@@ -13,11 +13,11 @@ No installation required, navigate to "github hosted version of html here" to ve
 
 This is a splash page showcasing services offered by the company Horiseon.
 
-![Webpage Screenshot](/Assets/Images/)
+![Webpage Screenshot](/Assets/Images/Screenshot 2023-07-12 221520.jpg)
 
 ## Credits
 
-Starter code provided by Rutgers Full-Stack Flex Bootcamp.
+Thank you to Jesse for support and assistance troubleshooting
 
 ## License
 
@@ -25,4 +25,4 @@ MIT License.
 
 ## Features
 
-Internal navigation links and elements.
+Internal navigation links and elements. Psuedo elements. Flexbox
