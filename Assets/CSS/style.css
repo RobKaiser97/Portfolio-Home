@@ -1,4 +1,4 @@
-/* Colors sourced from http://khroma.co/generator */
+/* Set CSS variables for specific color values */
 :root {
     --deep-koamaru: rgb(15, 43, 118);
     --ziggurat: rgb(195, 228, 224);
@@ -6,62 +6,51 @@
     --flesh: #fed2a8;
 }
 
-
-
+/* Apply a gradient background, set the color, and font for the entire HTML */
 html {
     min-height: 100%;
-    background-image: linear-gradient(
-        to top,
-        rgba(15, 43, 118, 0.6) 0%,
-        rgba(15, 43, 118, 1) 100%
-    );
+    background-image: linear-gradient(to top, rgba(15, 43, 118, 0.6) 0%, rgba(15, 43, 118, 1) 100%);
     background-repeat: repeat-y;
     color: var(--ziggurat);
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Set the width of the body to be 100% */
 body {
     width: 100%;
 }
 
-header {
-    padding-top: 10px;
-    word-spacing: .25rem;
-    letter-spacing: .15rem;
-}
-
-.topnav {
-    background-color: #11ffee00;
-    padding: 20px 20px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.topnav h1 {
-    color: var(--ziggurat);
+/* Apply padding, text alignment, and color to header, .topnav h1, and .topnav a */
+header, .topnav h1, .topnav a {
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
+    color: var(--ziggurat);
+}
+
+/* Display .topnav as flex and allow it to wrap */
+.topnav {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Set up properties for .topnav h1 */
+.topnav h1 {
     justify-content: flex-start;
     font-size: 4rem;
     font-weight: 400;
-    margin: 0 auto 0 0;
-
+    margin-right: auto;
 }
 
+/* Set up properties for .topnav a */
 .topnav a {
-    display: flex;
-    color: var(--ziggurat);
-    text-align: center;
-    text-decoration: none;
-    font-weight: 400;
     justify-content: flex-end;
-    padding: 10px 10px 15px 15px;
+    font-weight: 400;
     font-size: 3rem;
-    
-
 }
 
+/* Define hover and active states for .topnav a */
 .topnav a:hover {
     background-color: var(--ziggurat);
     color: black;
@@ -73,101 +62,189 @@ header {
     color: whitesmoke;
 }
 
+/* Set up properties for .photo-of-me and its nested elements */
 .photo-of-me {
-    margin: 0;
-    padding: 0;
-    background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
-
-    
 }
 
 .photo-of-me img {
     display: block;
     margin: 10px auto;
     max-width: 25%;
-    height: auto;
     border-radius: 15%;
-
 }
 
-.photo-of-me p {
+.photo-of-me p, .photo-of-me a {
     display: inherit;
     text-align: center;
     color: var(--deep-koamaru);
-    font-weight: 600;
-    background-color: rgba(255, 255, 255, 0.6);
-    font-size: 2rem;
 }
 
-.photo-of-me a {
-    text-decoration: none;
-    color: inherit;
-
-}
-
-.photo-of-me a:hover {
-    background-color: var(--ziggurat);
-    color: black;
-    border-radius: 5%;
-    border-style: dotted;
-}
-
-.photo-of-me a:active {
-    color: whitesmoke;
-}
-
-.about-me {
+/* Set up properties for .my-about-me */
+.my-about-me {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 2rem;
+} 
+/* Set up properties for .row */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 20px 20px;
+}
+
+/* Set up properties for .card header and a */
+.card header, 
+a {
+    font-size: 4rem;
+    text-decoration: none ;
+    color: var(--deep-koamaru);
+}
+
+/* Set up properties for #contact-me h2 */
+#contact-me h2 {
+    font-size: 4rem;
+    color: var(--deep-koamaru);
+
+}
+
+/* Set up properties for .contact-footer and .contact a */
+.contact-footer,
+.contact a {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    font-size: 4rem;
+    text-decoration: none;
+    justify-content: space-evenly;
+    text-align: center;
+    color: var(--deep-koamaru);
+}
+
+
+/* Make sure when using multiple elements separated by comma to include the preceding eleemnt */
+
+/* .about-me {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    flex: 1 1 100%;
     padding: 1.5rem;
 }
 
-.about-me h2 {
+.about-me h2, .about-me article {
     display: inherit;
-    /* flex-direction: ; */
+}
+
+.about-me h2 {
     width: 20%;
     height: 400px;
     font-size: 4rem;
-    /* justify-content: left; */
     align-items: center;
     border-width: 3px;
     border-style: none solid none none;
     border-color: var(--flesh);
     text-align: right;
-
 }
 
 .about-me article {
-    display: inherit;
-    width: 80%;
+    width: 60%;
     height: 400px;
-    /* justify-content: right; */
-    border-style: solid;
-    background-color: var(--ziggurat);
+    background-color: var(--flesh);
     color: var(--deep-koamaru);
     font-size: 2.5rem;
+    border: 3px solid var(--flesh);
+    inset: 3px;
+    
 }
 
+.about-me-para {
+    text-align: bottom;
+}
 
+.my-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1.5rem;
+}
 
+.my-work h2, .my-work article {
+    display: inherit;
+}
 
+.my-work h2 {
+    width: 20%;
+    height: 1000px;
+    font-size: 4rem;
+    align-items: center;
+    border-width: 3px;
+    border-style: none solid none none;
+    border-color: var(--flesh);
+    text-align: right;
+}
 
+.article-horieson {
+    flex-wrap: ;
+    width: 60%;
+    height: 600px;
+    background-color: var(--flesh);
+    color: var(--deep-koamaru);
+    font-size: 2.5rem;
+    border: 3px solid var(--flesh);
+    inset: 3px;
+    
+}
 
+.future-work {
+    flex-wrap: wrap;
+    width: 30%;
+    height: 600px;
+    background-color: var(--flesh);
+    color: var(--deep-koamaru);
+    font-size: 2.5rem;
+    border: 3px solid var(--flesh);
+    inset: 3px;
+} */
 
+/* .grid-container {
+    display: grid;
+    grid-template-columns: 33% 67%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "item1 item2"
+    "item3 item4"
+    "item5 item6";
+    gap: 10px;
+}
 
+.grid-item {
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
 
+.item1 { grid-area: item1; }
+.item2 { grid-area: item2; }
+.item3 { grid-area: item3; }
+.item4, .item5, .item6 { grid-area: item4; }
+.item7, .item8, .item9 { grid-area: item5; }
 
+ */
+
+/* Define a media query for screens less than 820px wide, modifying layout and styles for smaller screens */
 @media screen and (max-width: 820px) {
 
+    /* Modify the root variable for image width */
     :root {
         --image-width: 674px;
     }
 
+    /* Change .topnav to column orientation and adjust some of its properties */
     .topnav {
         flex-direction: column;
     }
@@ -177,36 +254,21 @@ header {
     }
 
     .topnav a {
-        text-decoration: underline;
         text-decoration-color: var(--flesh);
         text-decoration-thickness: 2px;
-        padding: 10px 20px;
-        flex-direction: column;
-
     }
 
     .topnav a:hover {
         text-decoration-color: black;
-
     }
 
-    body {
-        width: 100%;
-    }
-
-    /* .photo-of-me p {
-        color: var(--deep-koamaru);
-        font-weight: 600;
-        background-color: rgba(255, 255, 255, 0.6);
-    } */
-
+    /* Change .about-me to column orientation and adjust some of its properties */
     .about-me {
         flex-direction: column;
     }
 
     .about-me h2 {
         width: 95%;
-        /* align-items: center; */
         height: 100px;
         border-style: none none solid none;
         border-color: var(--flesh);
@@ -217,5 +279,10 @@ header {
         width: 95%;
         height: 200px;
         font-size: 1.75rem;
+    }
+
+    /* Change .contact-footer to column orientation */
+    .contact-footer {
+        flex-direction: column;
     }
 }
