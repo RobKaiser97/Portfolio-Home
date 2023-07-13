@@ -7,7 +7,7 @@ I have created a website containing my projects that I have worked on. This is a
 
 ## Installation
 
-No installation required, navigate to "github hosted version of html here" to veiw the project.
+No installation required, navigate to "[github hosted version of html here](https://robkaiser97.github.io/Portfolio-Home/)" to veiw the project.
 
 ## Usage
 
