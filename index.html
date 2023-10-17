@@ -1,143 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="./Assets/CSS/reset.css">
-    <link rel="stylesheet" href="./Assets/CSS/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Assets/CSS/style.css" />
+
     <title>Robert Kaiser's Coding Portfolio</title>
-</head>
+  </head>
+  <body>
+    <header class="header bg-primary text-white text-center py-4">
+      <div class="container">
+        <h1 class="mb-3">Robert Kaiser</h1>
+        <nav>
+          <a href="#About-Me" class="mx-2 text-white">About Me</a>
+          <a href="#My-Work" class="mx-2 text-white">My Work</a>
+          <a href="#Contact-Me" class="mx-2 text-white">Contact Me</a>
+        </nav>
+      </div>
+    </header>
 
-
-<body>
-        <header class="header">
-            
-            <div class="topnav">
-
-                <h1>Robert Kaiser</h1>
-                <a href="#About-Me">About Me</a>
-                <a href="#My-Work">My Work</a>
-                <a href="#Contact-Me">Contact Me</a>
-
+    <main class="container mt-4">
+      <section id="My-Work" class="my-4">
+        <h2>My Work</h2>
+        <!-- First row for the "Now We're Cookin'!" card -->
+        <div class="row gy-4 justify-content-center">
+          <div class="col-md-12 col-lg-6">
+            <div class="card">
+              <a
+                href="https://nowwerecooking-494c285649f9.herokuapp.com/"
+                target="_blank"
+              >
+                <img
+                  src="./Assets/Images/NowWereCooking.jpg"
+                  alt="Heroku Website Screenshot"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Now We're Cookin'!</h5>
+                </div>
+              </a>
             </div>
-   
-        </header>
+          </div>
+        </div>
 
-        <main>
-            
-            <section class="photo-of-me" style="background-image: url('./Assets/Images/ai-gen-background.jpeg');">
+        <!-- Second row for the other projects -->
+        <div class="row gy-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <a
+                href="https://robkaiser97.github.io/Horiseon-Refactoring-Homework-Assignment/"
+              >
+                <img
+                  src="./Assets/Images/horiseon-project.jpg"
+                  alt="Screenshot of Horieson Website"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Horieson Refactoring Assignment</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <a href="https://jp0st.github.io/Exercise-Planner-App">
+                <img
+                  src="./Assets/Images/workout-gen-screenshot.jpg"
+                  alt="Workout Generator Website"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Exercise Planner App</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <a href="#" target="_blank">
+                <img
+                  src="./Assets/Images/placeholder-image.jpg"
+                  alt="Placeholder image"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Sample Site: Coming Soon!</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                <img src="./Assets/Images/mountaintop-dogs.png" alt="photo of me on a hiking trail overlooking lake">
-                
-                <p>Picture taken at <a href="https://www.morrisparks.net/index.php/parks/pyramid-mountain-natural-historic-area/" target="_blank">
-                    Pyramid Mountain Natural Historic Area</a>
-                </p>
+      <!-- Intro and About Me Card -->
+      <section id="intro-card" class="card mx-auto my-4">
+        <div class="card-body">
+          <img
+            src="./Assets/Images/mountaintop-dogs.png"
+            alt="photo of me on a hiking trail overlooking lake"
+            class="img-fluid rounded mb-3 my-image"
+          />
+          <p class="mb-3">
+            Picture taken at
+            <a
+              rel="noreferrer noopener"
+              href="https://www.morrisparks.net/index.php/parks/pyramid-mountain-natural-historic-area/"
+              target="_blank"
+              >Pyramid Mountain Natural Historic Area</a
+            >
+          </p>
+          <!-- About Me section -->
+          <section id="About-Me" class="my-about-me my-4">
+            <h2>About Me</h2>
+            <p class="short-text">
+              Hi my name is Robert Kaiser and this is going to be an ever
+              evolving page showcasing my works...
+            </p>
+            <p class="full-text hide">
+              In my free time I enjoy learning new ways to better my coding
+              knowledge, hiking, listening to music and playing video games. I
+              was in the Marine Corps from 2015-2022 and i worked as an Avionics
+              Repair Technician. After completing my service i worked as a
+              landscaper before starting a job at L3 Harris. There i met an
+              engineer who reintroduced me to coding and made me want more,
+              starting me on my coding Journey! Stay tuned for more...
+            </p>
+            <button onclick="toggleText()" class="btn btn-primary">
+              Read more
+            </button>
+          </section>
+        </div>
+      </section>
+    </main>
 
-            </section>
-            
-            <!-- Decided to go in a different direction, leaving in to revisit later for refactoring
-                <section class="about-me" id="About-Me">
-                <h2>About Me</h2>
-
-                <article>
-                    <p class="about-me-para">uyihbvrefhubjvbuubijveuijbyhknveuibnjveuibjnveiujrbn</p>
-                </article>
-
-            </section>
-
-            <section class="my-work" id="My-Work">
-                <h2>Work</h2>
-
-                <article class="article-horieson"  style="background-image: url('./Assets/Images/horiseon-project.jpg'); background-size: 100% 100%; background-repeat: no-repeat;">
-                    <p >uyihbvrefhubjvbuubijveuijbyhknveuibnjveuibjnveiujrbn</p>
-                </article>
-        
-                <article class="furture-work">
-                    <p>hh</p>
-                </article>
-
-
-                <article>
-                    <p></p>
-                </article>
-
-            </section>
-
-            <section class="contact-me" id="Contact-Me">
-                <h2>Contact Me</h2>
-
-                <article style="background-image: url('./Assets/Images/horiseon-project.jpg'); background-size: 100% 100%; background-repeat: no-repeat;">
-                    <p class="about-me-para">uyihbvrefhubjvbuubijveuijbyhknveuibnjveuibjnveiujrbn</p>
-                </article>
-
-            </section> -->
-
-
-
-            <article class="my-about-me">
-                <h2 id="About-Me">
-                About Me     
-                </h2>
-                <p >Hi my name is Robert Kaiser and this is going to be an ever evolving page showcasing my works. In my free time I enjoy learning new ways 
-                    to better my coding knowledge, hiking, listening to music and playing video games. I was in the Marine Corps from 2015-2022 and i worked as an Avionics Repair 
-                    Technician. After completing my service i worked as a landscaper before starting a job at L3 Harris. There i met an engineer who reintroduced me to coding
-                    and made me want more, starting me on my coding Journey! Stay tuned for more...
-                </p>
-            </article>
-
-            <article id="My-Work">
-                <h2>
-                    My Work
-                </h2>
-                <section class="row">
-                    <section class="card">
-                        <a href="https://robkaiser97.github.io/Horiseon-Refactoring-Homework-Assignment/">
-                            <header>Horieson Refactoring Assignment</header>
-                            <img src="./Assets/Images/horiseon-project.jpg" style="max-width: 88vw;" alt="Screenshot of Horieson Website">
-                        </a>
-                    </section>
-
-                </section>
-
-                <section class="row">
-                    <section class="card">
-                        <a href="https://jp0st.github.io/Exercise-Planner-App">
-                            <header>Exercise Planner App</header>
-                            <img src="./Assets/Images/workout-gen-screenshot.jpg" alt="Workout Generator Website" style="width: fit-content; align-content: center;" class="cardImage">
-                        </a>
-                    </section>
-                </section>
-
-                <section class="row">
-                    <section class="card">
-                        <a href="#" target="_blank">
-                            <header>Sample Site: Coming Soon!</header>
-                            <img src="./Assets/Images/placeholder-image.jpg" alt="Placeholder image" class="cardImage">
-                        </a>
-                    </section>
-                </section>
-
-                <section class="row">
-                    <section class="card">
-                        <a href="#" target="_blank">
-                            <header>Sample Site: Coming Soon!</header>
-                            <img src="./Assets/Images/placeholder-image.jpg" alt="Placeholder image" class="cardImage">
-                        </a>
-                    </section>
-                </section>
-            </article>
-            <hr>
-        </main>
-
-
-
-<footer id="contact-me">
-    <h2>Contact Me</h2>
-    <section class="contact-footer">
-        <a href="mailto:paintballmanrob@gmail.com"> Email Me</a>
+    <footer id="contact-me">
+      <h2>Contact Me</h2>
+      <nav class="contact-footer">
+        <a href="mailto:paintballmanrob@gmail.com">Email Me</a>
         <a href="https://github.com/robkaiser97">My Github</a>
-    </section>
-</footer>  
-</body>
+      </nav>
+    </footer>
+    <script>
+      function toggleText() {
+        var fullText = document.querySelector(".full-text");
+        var btnText = document.querySelector(".btn");
+        if (fullText.classList.contains("hide")) {
+          fullText.classList.remove("hide");
+          btnText.textContent = "Read less";
+        } else {
+          fullText.classList.add("hide");
+          btnText.textContent = "Read more";
+        }
+      }
+    </script>
+  </body>
 </html>
